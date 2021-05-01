@@ -1,36 +1,31 @@
-package example;
+package C19428962;
 
 import ie.tudublin.*;
+import ie.tudublin.Visual;
+import ie.tudublin.VisualException;
 
 public class MyVisual extends Visual
 {    
-    WaveForm wf;
-    AudioBandsVisual abv;
+    
+    CubeVisual cv;
 
     public void settings()
     {
-        size(1024, 500);
+        size(1024, 500, P3D);
         
-        // Use this to make fullscreen
-        //fullScreen();
-
-        // Use this to make fullscreen and use P3D for 3D graphics
-        //fullScreen(P3D, SPAN); 
     }
 
     public void setup()
     {
         startMinim();
-                
-        // Call loadAudio to load an audio file to process 
+        
+        
         loadAudio("heroplanet.mp3");   
 
+        cv = new CubeVisual(this);
+       
         
-        // Call this instead to read audio from the microphone
-        //startListening(); 
         
-        wf = new WaveForm(this);
-        abv = new AudioBandsVisual(this);
     }
 
     public void keyPressed()
@@ -59,7 +54,16 @@ public class MyVisual extends Visual
 
         // Call this is you want to get the average amplitude
         calculateAverageAmplitude();        
-        wf.render();
-        abv.render();
+        
+        switch (key) 
+        {
+            case '1':
+            {
+                cv.render();
+                break;
+            }
+
+        }
+
     }
 }
