@@ -32,8 +32,16 @@ public class MyVisual extends Visual
     {
         if (key == ' ')
         {
-            getAudioPlayer().cue(0);
+        
             getAudioPlayer().play();
+        }
+        if (key == 'p')
+        {
+            getAudioPlayer().pause();
+        }
+        if (key == 's')
+        {
+            getAudioPlayer().cue(0);
         }
     }
 
