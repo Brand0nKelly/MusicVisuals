@@ -8,10 +8,11 @@ public class MyVisual extends Visual
 {    
     
     CubeVisual cv;
+    WaveForm wf;
 
     public void settings()
     {
-        size(1024, 500, P3D);
+        size(1024, 600, P3D);
         
     }
 
@@ -24,6 +25,7 @@ public class MyVisual extends Visual
 
         cv = new CubeVisual(this);
        
+        wf = new WaveForm(this);
         
         
     }
@@ -71,6 +73,11 @@ public class MyVisual extends Visual
                 break;
             }
 
+            case '2':
+            {
+                wf.render();
+                break;
+            }
         }
 
     }

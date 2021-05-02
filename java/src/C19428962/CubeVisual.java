@@ -10,10 +10,14 @@ float angle = 0.3f;
 float size = 300;
 
 
+
 public CubeVisual(MyVisual bk)
 {
     this.bk = bk;
+
+    
 }
+
 
 public void render()
 {
