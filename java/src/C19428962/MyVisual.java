@@ -9,6 +9,8 @@ public class MyVisual extends Visual
     
     CubeVisual cv;
     WaveForm wf;
+    Triangle t;
+    Sphere s;
 
     public void settings()
     {
@@ -27,7 +29,9 @@ public class MyVisual extends Visual
        
         wf = new WaveForm(this);
         
-        
+        t = new Triangle(this);
+
+        s = new Sphere(this);
     }
 
     public void keyPressed()
@@ -76,6 +80,18 @@ public class MyVisual extends Visual
             case '2':
             {
                 wf.render();
+                break;
+            }
+
+            case '3':
+            {
+                t.render();
+                break;
+            }
+
+            case '4':
+            {
+                s.render();
                 break;
             }
         }
