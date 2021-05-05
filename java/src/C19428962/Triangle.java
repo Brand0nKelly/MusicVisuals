@@ -5,7 +5,7 @@ import processing.core.*;
 public class Triangle extends PApplet {
 
     MyVisual bk; 
-
+    float angle = 0.3f;
     public Triangle(MyVisual bk)
     {
         this.bk = bk;
@@ -15,9 +15,12 @@ public class Triangle extends PApplet {
 
     public void render()
     {
+
+        bk.colorMode(PApplet.HSB);
         bk.calculateAverageAmplitude();
         
-       
+        bk.beginShape(TRIANGLES);
+        
         
 
     }

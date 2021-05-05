@@ -6,16 +6,16 @@ import processing.core.*;
 public class WaveForm
 {
     MyVisual bk; 
-    float cy = 10;
+    float cy = 0;
 
-    float yc = 10;
+    
 
     public WaveForm(MyVisual bk)
     {
         this.bk = bk;
-        cy = this.bk.height / 4;
+        cy = this.bk.height;
 
-        yc = this.bk.height / 4;
+    
     }
 
     public void render()
@@ -28,7 +28,7 @@ public class WaveForm
                 , 255
                 , 255
             );
-            bk.line(i, 40, i, 40 + 40 * bk.getAudioBuffer().get(i));
+            bk.line(i, cy, i, cy + cy * bk.getAudioBuffer().get(i));
         }
 
         for(int i = 0 ; i < bk.getAudioBuffer().size() ; i ++)
@@ -38,7 +38,7 @@ public class WaveForm
                 , 255
                 , 255
             );
-            bk.line(i, 600, i, 600 + 600 * bk.getAudioBuffer().get(i));
+            bk.line(i, 10, i, 10 + 10 * bk.getAudioBuffer().get(i));
         }
 
 

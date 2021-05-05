@@ -11,6 +11,7 @@ public class MyVisual extends Visual
     WaveForm wf;
     Triangle t;
     Sphere s;
+    Circle c;
 
     public void settings()
     {
@@ -32,6 +33,8 @@ public class MyVisual extends Visual
         t = new Triangle(this);
 
         s = new Sphere(this);
+
+        c = new Circle(this);
     }
 
     public void keyPressed()
@@ -80,6 +83,7 @@ public class MyVisual extends Visual
             case '2':
             {
                 wf.render();
+                s.render();
                 break;
             }
 
@@ -92,6 +96,12 @@ public class MyVisual extends Visual
             case '4':
             {
                 s.render();
+                break;
+            }
+
+            case '5':
+            {
+                c.render();
                 break;
             }
         }

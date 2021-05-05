@@ -22,9 +22,10 @@ public CubeVisual(MyVisual bk)
 public void render()
 {
     bk.calculateAverageAmplitude();
-    bk.stroke(0);
+    bk.stroke(PApplet.map(bk.getSmoothedAmplitude(),0, 1, 0, 255), 255, 255);
     bk.strokeWeight(1);
     bk.pushMatrix();
+    bk.noFill();
     bk.colorMode(PApplet.HSB);
     bk.translate(400, 200, -600);
     bk.rotateX(angle);
@@ -35,9 +36,10 @@ public void render()
 
 
     bk.calculateAverageAmplitude();
-    bk.stroke(0);
+    bk.stroke(PApplet.map(bk.getSmoothedAmplitude(),0, 1, 0, 255), 255, 255);
     bk.strokeWeight(1);
     bk.pushMatrix();
+    bk.noFill();
     bk.colorMode(PApplet.HSB);
     bk.translate(600, 800, -600);
     bk.rotateX(angle);
@@ -48,9 +50,10 @@ public void render()
 
 
     bk.calculateAverageAmplitude();
-    bk.stroke(0);
+    bk.stroke(PApplet.map(bk.getSmoothedAmplitude(),0, 1, 0, 255), 255, 255);
     bk.strokeWeight(1);
     bk.pushMatrix();
+    bk.noFill();
     bk.colorMode(PApplet.HSB);
     bk.translate(800, 200, -600);
     bk.rotateX(angle);
