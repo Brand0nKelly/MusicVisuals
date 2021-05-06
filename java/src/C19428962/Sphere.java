@@ -21,22 +21,24 @@ public class Sphere extends PApplet
         bk.colorMode(PApplet.HSB);
         bk.pushMatrix();
         
-        bk.translate(400, 200, -600);
+        bk.translate(400, 100, -600);
         bk.stroke(PApplet.map(bk.getSmoothedAmplitude(),0, 1, 0, 255), 255, 255);
         bk.rotateX(angle);
         bk.rotateY(angle);
         bk.noFill();
+        bk.box(250);
         bk.sphere(10 + bk.getSmoothedAmplitude() * size);
         bk.popMatrix();
         angle += 0.02f;
 
         bk.colorMode(PApplet.HSB);
         bk.pushMatrix(); 
-        bk.translate(600, 800, -600);
+        bk.translate(600, 700, -600);
         bk.stroke(PApplet.map(bk.getSmoothedAmplitude(),0, 1, 0, 255), 255, 255);
         bk.rotateX(angle);
         bk.rotateY(angle);
         bk.noFill();
+        bk.box(250);
         bk.sphere(10 + bk.getSmoothedAmplitude() * size);
         bk.popMatrix();
         angle += 0.02f;
@@ -45,10 +47,11 @@ public class Sphere extends PApplet
 
         bk.colorMode(PApplet.HSB);
         bk.pushMatrix();
-        bk.translate(800, 200, -600);
+        bk.translate(800, 100, -600);
         bk.stroke(PApplet.map(bk.getSmoothedAmplitude(),0, 1, 0, 255), 255, 255);
         bk.rotateX(angle);
         bk.rotateY(angle);
+        bk.box(250);
         bk.noFill();
         bk.sphere(10 + bk.getSmoothedAmplitude() * size);
         bk.popMatrix();

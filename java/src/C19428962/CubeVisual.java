@@ -7,7 +7,7 @@ public class CubeVisual extends PApplet
 
 MyVisual bk; 
 float angle = 0.3f;
-float size = 300;
+float size = 700;
 
 
 
@@ -27,7 +27,7 @@ public void render()
     bk.pushMatrix();
     bk.noFill();
     bk.colorMode(PApplet.HSB);
-    bk.translate(400, 200, -600);
+    bk.translate(400, 100, -600);
     bk.rotateX(angle);
     bk.rotateZ(angle); 
     bk.box(10 + bk.getSmoothedAmplitude() * size); 
@@ -41,7 +41,7 @@ public void render()
     bk.pushMatrix();
     bk.noFill();
     bk.colorMode(PApplet.HSB);
-    bk.translate(600, 800, -600);
+    bk.translate(600, 700, -600);
     bk.rotateX(angle);
     bk.rotateZ(angle); 
     bk.box(10 + bk.getSmoothedAmplitude() * size); 
@@ -55,7 +55,7 @@ public void render()
     bk.pushMatrix();
     bk.noFill();
     bk.colorMode(PApplet.HSB);
-    bk.translate(800, 200, -600);
+    bk.translate(800, 100, -600);
     bk.rotateX(angle);
     bk.rotateZ(angle); 
     bk.box(10 + bk.getSmoothedAmplitude() * size); 

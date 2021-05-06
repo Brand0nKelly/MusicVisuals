@@ -9,7 +9,6 @@ public class MyVisual extends Visual
     
     CubeVisual cv;
     WaveForm wf;
-    Triangle t;
     Sphere s;
     Circle c;
     Intro I;
@@ -31,7 +30,6 @@ public class MyVisual extends Visual
        
         wf = new WaveForm(this);
         
-        t = new Triangle(this);
 
         s = new Sphere(this);
 
@@ -86,23 +84,18 @@ public class MyVisual extends Visual
             case '2':
             {
                 wf.render();
-                s.render();
+                
+                
                 break;
             }
 
             case '3':
             {
-                t.render();
-                break;
-            }
-
-            case '4':
-            {
                 s.render();
                 break;
             }
 
-            case '5':
+            case '4':
             {
                 c.render();
                 break;

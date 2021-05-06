@@ -17,21 +17,47 @@ public Circle(MyVisual bk)
 
 public void render()
 {
-    bk.colorMode(PApplet.HSB);
+    bk.sphere(1 + bk.getSmoothedAmplitude() * 800);
     
+    bk.colorMode(PApplet.HSB);
+    bk.pushMatrix(); 
     bk.noFill();
-    bk.translate(400, 200, -600);
+    bk.translate(400, 100, -600);
     bk.stroke(PApplet.map(bk.getSmoothedAmplitude(),0, 1, 0, 255), 255, 255);
    
     for(int i = 0 ; i < bk.getAudioBuffer().size() ; i ++)
     {
         bk.ellipse(10 * bk.getAudioBuffer().get(i),10, 100,100);
-      
+    
     }
+    bk.popMatrix();
+    
 
-    bk.pushMatrix();
-    bk.box(10 + bk.getSmoothedAmplitude() * 600);
-  
+    bk.pushMatrix(); 
+    bk.noFill();
+    bk.translate(600, 700, -600);
+    bk.stroke(PApplet.map(bk.getSmoothedAmplitude(),0, 1, 0, 255), 255, 255);
+   
+    for(int i = 0 ; i < bk.getAudioBuffer().size() ; i ++)
+    {
+        bk.ellipse(10 * bk.getAudioBuffer().get(i),10, 100,100);
+        
+    
+    }
+    bk.popMatrix();
+
+
+
+    bk.pushMatrix(); 
+    bk.noFill();
+    bk.translate(800, 100, -600);
+    bk.stroke(PApplet.map(bk.getSmoothedAmplitude(),0, 1, 0, 255), 255, 255);
+   
+    for(int i = 0 ; i < bk.getAudioBuffer().size() ; i ++)
+    {
+        bk.ellipse(10 * bk.getAudioBuffer().get(i),10, 100,100);
+    
+    }
     bk.popMatrix();
    
 }
