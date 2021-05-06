@@ -12,6 +12,7 @@ public class MyVisual extends Visual
     Triangle t;
     Sphere s;
     Circle c;
+    Intro I;
 
     public void settings()
     {
@@ -35,6 +36,8 @@ public class MyVisual extends Visual
         s = new Sphere(this);
 
         c = new Circle(this);
+
+        I= new Intro(this);
     }
 
     public void keyPressed()
@@ -103,6 +106,11 @@ public class MyVisual extends Visual
             {
                 c.render();
                 break;
+            }
+
+            default:
+            {
+                I.render();
             }
         }
 
