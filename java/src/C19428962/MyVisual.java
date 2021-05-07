@@ -23,18 +23,12 @@ public class MyVisual extends Visual
     {
         startMinim();
         
-        
-        loadAudio("heroplanet.mp3");   
+        loadAudio("chill.mp3");   
 
         cv = new CubeVisual(this);
-       
         wf = new WaveForm(this);
-        
-
         s = new Sphere(this);
-
         c = new Circle(this);
-
         I= new Intro(this);
     }
 
@@ -84,7 +78,6 @@ public class MyVisual extends Visual
             case '2':
             {
                 wf.render();
-                
                 
                 break;
             }

@@ -13,9 +13,7 @@ float size = 700;
 
 public CubeVisual(MyVisual bk)
 {
-    this.bk = bk;
-
-    
+    this.bk = bk; 
 }
 
 
