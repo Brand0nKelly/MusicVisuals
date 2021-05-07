@@ -11,8 +11,6 @@ public class WaveForm
 
     float yc = 0;
 
-    
-
     public WaveForm(MyVisual bk)
     {
         this.bk = bk;
@@ -38,13 +36,6 @@ public class WaveForm
 
             bk.line(i, cy *2, i, cy *2 + cy * bk.getAudioBuffer().get(i));
         }
-
-
-
-     
-
-
-
-            
+  
     }
 }

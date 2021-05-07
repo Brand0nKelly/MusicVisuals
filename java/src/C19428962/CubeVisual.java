@@ -6,7 +6,7 @@ public class CubeVisual extends PApplet
 {
 
 MyVisual bk; 
-float angle = 0.3f;
+float angle = 0.2f;
 float size = 700;
 
 
