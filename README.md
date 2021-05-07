@@ -75,12 +75,14 @@ For my assignment I created a music visualiser that would produce different shap
 
 # What I am most proud of in the assignment
 
+I am most proud of the boxed sphere visual and the concept of the 3 shapes. I struggled to come up with ideas for my visual, I knew I wanted something visually stimulation but at the same time not to over load you with too many different things at once. In terms of the sphere box visual I really like how it almost pops out of the screen with the music. The way you can switch between the diffrent shapes and they're in the same as before but something diffrent so its not like you have to change your focus
 
+![An image](images/sphere.PNG)
 
 
 
 # Youtube Video
-This is a [hyperlink](http://bryanduggan.org)
+[Youtube](https://www.youtube.com/watch?v=ZV5wix2NhlI)
 
 # Visuals
 
