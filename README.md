@@ -23,8 +23,7 @@ For my assignment I created a music visualiser that would produce different shap
 - Java processing libraries and minim used together with OOP to create the diffrent visuals and shapes.
 
 
-public void setup()
-    {
+public void setup() {
         startMinim();
         
         loadAudio("chill.mp3");   
@@ -38,8 +37,7 @@ public void setup()
 
 
 - Inheritance was used in this class 
-public class MyVisual extends Visual
-{    
+public class MyVisual extends Visual {    
     
     CubeVisual cv;
     WaveForm wf;
