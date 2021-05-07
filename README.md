@@ -12,8 +12,14 @@ Student Number: C19428962
 - Check out the WaveForm and AudioBandsVisual for examples of how to call the Processing functions from other classes that are not subclasses of PApplet
 
 # Description of the assignment
-
+For my assignment I created a music visualiser that would produce different shapes and visuals which would respond the music (the amplitude). My goal the assignment was to create something simple but effective. The simplistic design not only provides an colourful visual exerience but also lets you feel the song. 
 # Instructions
+
+- Press the space key to start the music
+- To pause the music press 'p'
+- To resert the music press 's'
+- Start the visuals press 1, 2, 3 , 4
+- Press 5 for the info menu
 
 # How it works
 
