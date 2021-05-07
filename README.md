@@ -67,7 +67,7 @@ This is a [hyperlink](http://bryanduggan.org)
 
 # Visuals
 
-![An image](images/info.png)
+![An image](info.png)
 
 ![An image](images/cubes.png)
 
