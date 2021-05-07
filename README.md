@@ -16,73 +16,72 @@ For my assignment I created a music visualiser that would produce different shap
 
 # How it works
 
+- This is the setup method it is responsible for playing the song, the MP3 file is called.
+
+- I also initialized every object for each visual class.
+
+- Java processing libraries and minim used together with OOP to create the diffrent visuals and shapes.
+
+
+public void setup()
+    {
+        startMinim();
+        
+        loadAudio("chill.mp3");   
+        
+        cv = new CubeVisual(this);
+        wf = new WaveForm(this);
+        s = new Sphere(this);
+        c = new Circle(this);
+        I= new Intro(this);
+    }
+
+
+- Inheritance was used in this class 
+public class MyVisual extends Visual
+{    
+    
+    CubeVisual cv;
+    WaveForm wf;
+    Sphere s;
+    Circle c;
+    Intro I;
+
+
+
+
+
+    
+    
+
+
+
+
+
 # What I am most proud of in the assignment
 
-# Markdown Tutorial
 
-This is *emphasis*
 
-This is a bulleted list
 
-- Item
-- Item
 
-This is a numbered list
-
-1. Item
-1. Item
-
+# Youtube Video
 This is a [hyperlink](http://bryanduggan.org)
 
-# Headings
-## Headings
-#### Headings
-##### Headings
+# Visuals
 
-This is code:
+![An image](images/info.png)
 
-```Java
-public void render()
-{
-	ui.noFill();
-	ui.stroke(255);
-	ui.rect(x, y, width, height);
-	ui.textAlign(PApplet.CENTER, PApplet.CENTER);
-	ui.text(text, x + width * 0.5f, y + height * 0.5f);
-}
-```
+![An image](images/cubes.png)
 
-So is this without specifying the language:
+![An image](images/waveform.png)
 
-```
-public void render()
-{
-	ui.noFill();
-	ui.stroke(255);
-	ui.rect(x, y, width, height);
-	ui.textAlign(PApplet.CENTER, PApplet.CENTER);
-	ui.text(text, x + width * 0.5f, y + height * 0.5f);
-}
-```
+![An image](images/sphere.png)
 
-This is an image using a relative URL:
+![An image](images/circle.png)
 
-![An image](images/p8.png)
 
-This is an image using an absolute URL:
 
-![A different image](https://bryanduggandotorg.files.wordpress.com/2019/02/infinite-forms-00045.png?w=595&h=&zoom=2)
 
-This is a youtube video:
 
-[![YouTube](http://img.youtube.com/vi/J2kHSSFA4NU/0.jpg)](https://www.youtube.com/watch?v=J2kHSSFA4NU)
 
-This is a table:
-
-| Heading 1 | Heading 2 |
-|-----------|-----------|
-|Some stuff | Some more stuff in this column |
-|Some stuff | Some more stuff in this column |
-|Some stuff | Some more stuff in this column |
-|Some stuff | Some more stuff in this column |
 
