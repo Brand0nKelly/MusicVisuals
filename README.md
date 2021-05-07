@@ -23,37 +23,54 @@ For my assignment I created a music visualiser that would produce different shap
 - Java processing libraries and minim used together with OOP to create the diffrent visuals and shapes.
 
 
-public void setup() {
-        startMinim();
+
+
+      public void setup() 
+      {
+
+       startMinim();
         
-        loadAudio("chill.mp3");   
+       loadAudio("chill.mp3");  
         
-        cv = new CubeVisual(this);
-        wf = new WaveForm(this);
-        s = new Sphere(this);
-        c = new Circle(this);
-        I= new Intro(this);
-    }
+      cv = new CubeVisual(this);
+      wf = new WaveForm(this);
+      s = new Sphere(this);
+      c = new Circle(this);
+      I= new Intro(this);
+      }
 
 
-- Inheritance was used in this class 
-public class MyVisual extends Visual {    
+- This is my MyVisual class, it extends the visual class and gets the information and communicates it to the class, otherwise known as inheritance.
+
+
+      public class MyVisual extends Visual 
+      {    
     
-    CubeVisual cv;
-    WaveForm wf;
-    Sphere s;
-    Circle c;
-    Intro I;
+         CubeVisual cv;
+         WaveForm wf;
+         Sphere s;
+         Circle c;
+         Intro I;
 
 
+- This is the keypressed method and is resposisble for controling the audio with start, pause and restart.
 
 
-
-    
-    
-
-
-
+      public void keyPressed()
+      {
+        if (key == ' ')
+        {
+            getAudioPlayer().play();
+        }
+        if (key == 'p')
+        {
+            getAudioPlayer().pause();
+        }
+        if (key == 's')
+        {
+            getAudioPlayer().cue(0);
+        }
+     }
 
 
 # What I am most proud of in the assignment
@@ -67,15 +84,15 @@ This is a [hyperlink](http://bryanduggan.org)
 
 # Visuals
 
-![An image](info.png)
+![An image](images/info.PNG)
 
-![An image](images/cubes.png)
+![An image](images/cubes.PNG)
 
-![An image](images/waveform.png)
+![An image](images/waveform.PNG)
 
-![An image](images/sphere.png)
+![An image](images/sphere.PNG)
 
-![An image](images/circle.png)
+![An image](images/circle.PNG)
 
 
 
