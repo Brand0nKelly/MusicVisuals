@@ -4,15 +4,8 @@ Name: Brandon Kelly
 
 Student Number: C19428962
 
-## Instructions
-- Fork this repository and use it a starter project for your assignment
-- Create a new package named your student number and put all your code in this package.
-- You should start by creating a subclass of ie.tudublin.Visual
-- There is an example visualiser called MyVisual in the example package
-- Check out the WaveForm and AudioBandsVisual for examples of how to call the Processing functions from other classes that are not subclasses of PApplet
-
 # Description of the assignment
-For my assignment I created a music visualiser that would produce different shapes and visuals which would respond the music (the amplitude). My goal the assignment was to create something simple but effective. The simplistic design not only provides an colourful visual exerience but also lets you feel the song. 
+For my assignment I created a music visualiser that would produce different shapes and visuals which would respond the music (the amplitude). My goal the assignment was to create something simple but effective. The simplistic design not only provides an colourful visual exerience but also lets you feel the song. The song I have chosen is one of my favourites to just get in the zone but higher mind frame. Both 2D and 3D shapes are used.
 # Instructions
 
 - Press the space key to start the music
